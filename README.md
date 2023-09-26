@@ -49,7 +49,4 @@ We welcome contributions from the community! Feel free to open issues, submit pu
 
 # NOTE
 
-```
 Remember to replace `your-username`, and add actual screenshots to the `screenshots` directory or provide the correct path to your screenshots.
-
-```
