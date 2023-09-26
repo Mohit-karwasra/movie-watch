@@ -2,6 +2,10 @@
 
 Welcome to Movie-watch, a web application for exploring the latest movies and TV shows, viewing details, and adding them to your watchlist. This project is built using React, Vite, and SCSS, and it features user authentication with JWT tokens, protected routes, user profiles, and more.
 
+## Demo
+
+You can try out the demo of this project [here](https://movie-watch-ten.vercel.app/).
+
 ## Features
 
 - **User Authentication:** Secure user registration and login system with JWT token-based authentication.
