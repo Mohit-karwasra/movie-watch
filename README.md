@@ -29,14 +29,27 @@ Welcome to Movie-watch, a web application for exploring the latest movies and TV
 ## Screenshots
 
 ![Screenshot 1](screenshots/screenshot1.png)
+
 <!-- Include additional screenshots of your website here -->
 
 ## Getting Started
 
 To run this project locally, follow these steps:
 
-1. Clone this repository.
+Clone this repository.
 
 ```bash
 git clone https://github.com/your-username/movie-watch.git
 cd movie-watch
+```
+
+# Contributing
+
+We welcome contributions from the community! Feel free to open issues, submit pull requests, or provide feedback to help us improve this project.
+
+# NOTE
+
+```
+Remember to replace `your-username`, and add actual screenshots to the `screenshots` directory or provide the correct path to your screenshots.
+
+```
