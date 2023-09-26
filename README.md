@@ -30,7 +30,7 @@ Welcome to Movie-watch, a web application for exploring the latest movies and TV
 
 ![Screenshot 1](public/Home.png)
 ![Screenshot 2](public/Movie-page.png)
-![Screenshot 3](public/Page.png)
+![Screenshot 3](public/Profile.png)
 ![Screenshot 4](public/Details-page.png)
 
 <!-- Include additional screenshots of your website here -->
