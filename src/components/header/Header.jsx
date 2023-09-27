@@ -78,27 +78,36 @@ const Header = () => {
 	return (
 		<header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
 			<ContentWrapper>
-				<div className="logo" onClick={() => navigate("/")}>
-					<img src={logo} alt="logo" />
-				</div>
-				<ul className="menuItems">
-					<li className="menuItem" onClick={() => navigate("/")}>
-						Home
-					</li>
-					<li className="menuItem" onClick={() => navigationHandler("movie")}>
-						Movies
-					</li>
-					<li className="menuItem" onClick={() => navigationHandler("tv")}>
-						TV Shows
-					</li>
-					<li className="menuItem" onClick={() => navigationHandler("watchlist")}>
-						Watchlist
-					</li>
+				<div className="logo-menu-container">
+					<div className="logo" onClick={() => navigate("/")}>
+						<img src={logo} alt="logo" />
+					</div>
+					<div>
+						<ul className="menuItems">
+							{mobileMenu && (
+								<li className="menuItem">
+									<div style={{ color: "black" }}>
+										<ProfileIcon />
+									</div>
+								</li>
+							)}
+							<li className="menuItem" onClick={() => navigate("/")}>
+								Home
+							</li>
+							<li className="menuItem" onClick={() => navigationHandler("movie")}>
+								Movies
+							</li>
+							<li className="menuItem" onClick={() => navigationHandler("tv")}>
+								TV Shows
+							</li>
+							<li className="menuItem" onClick={() => navigationHandler("watchlist")}>
+								Watchlist
+							</li>
 
-					{/* <li className="menuItem">
-						<HiOutlineSearch onClick={openSearch} />
-					</li> */}
-				</ul>
+							{mobileMenu && <li className="menuItem">dummy item</li>}
+						</ul>
+					</div>
+				</div>
 
 				<div className="searchBar">
 					<ContentWrapper>
@@ -115,8 +124,28 @@ const Header = () => {
 					</ContentWrapper>
 				</div>
 
-				<div>
-					<ProfileIcon />
+				<div className="profile-search-container">
+					{/* I'm using tabindex and the :focus state to cheat the interactivity on mobile */}
+					<div className="container__search" tabIndex="1">
+						<div className="search-container" tabIndex="1">
+							<input
+								className="search-input"
+								type="text"
+								placeholder="search"
+								// placeholder="Search for a movie or tv show...."
+								onChange={(e) => setQuery(e.target.value)}
+								onKeyUp={searchQueryHandler}
+							/>
+							<a className="search-button">
+								<i className="fa fa-search">
+									<HiOutlineSearch className="searchIcon" />
+								</i>
+							</a>
+						</div>
+					</div>
+					<div className="profileIcon-header">
+						<ProfileIcon />
+					</div>
 				</div>
 
 				<div className="mobileMenuItems">

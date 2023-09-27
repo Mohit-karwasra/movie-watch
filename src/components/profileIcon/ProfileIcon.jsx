@@ -32,7 +32,7 @@ function ProfileIcon() {
 				width={"100%"}
 				padding={"1%"}
 				borderRadius={"50%"}
-				bgColor={"black"}
+				bgColor={"#021144"}
 			>
 				<Avatar bg="teal.500" />
 			</MenuButton>
